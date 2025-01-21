@@ -1,7 +1,7 @@
 pipeline
 {
     agent any
-    enviroment
+    environment
     {
         DOTNET_CLI_HOME="${env.WORKSPACE}/.dotnet"
     }
