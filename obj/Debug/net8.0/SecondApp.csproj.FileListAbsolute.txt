@@ -1,0 +1,15 @@
+D:\CICDTraining\Day2\SecondApp\bin\Debug\net8.0\SecondApp.exe
+D:\CICDTraining\Day2\SecondApp\bin\Debug\net8.0\SecondApp.deps.json
+D:\CICDTraining\Day2\SecondApp\bin\Debug\net8.0\SecondApp.runtimeconfig.json
+D:\CICDTraining\Day2\SecondApp\bin\Debug\net8.0\SecondApp.dll
+D:\CICDTraining\Day2\SecondApp\bin\Debug\net8.0\SecondApp.pdb
+D:\CICDTraining\Day2\SecondApp\obj\Debug\net8.0\SecondApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\CICDTraining\Day2\SecondApp\obj\Debug\net8.0\SecondApp.AssemblyInfoInputs.cache
+D:\CICDTraining\Day2\SecondApp\obj\Debug\net8.0\SecondApp.AssemblyInfo.cs
+D:\CICDTraining\Day2\SecondApp\obj\Debug\net8.0\SecondApp.csproj.CoreCompileInputs.cache
+D:\CICDTraining\Day2\SecondApp\obj\Debug\net8.0\SecondApp.sourcelink.json
+D:\CICDTraining\Day2\SecondApp\obj\Debug\net8.0\SecondApp.dll
+D:\CICDTraining\Day2\SecondApp\obj\Debug\net8.0\refint\SecondApp.dll
+D:\CICDTraining\Day2\SecondApp\obj\Debug\net8.0\SecondApp.pdb
+D:\CICDTraining\Day2\SecondApp\obj\Debug\net8.0\SecondApp.genruntimeconfig.cache
+D:\CICDTraining\Day2\SecondApp\obj\Debug\net8.0\ref\SecondApp.dll
