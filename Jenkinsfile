@@ -32,10 +32,20 @@ pipeline {
                 }
             }
         }
+        stage ('Test')
+        {
+            steps{
+                script{
+                    bat 'dotnet test --no-build --verbosity normal'
+                    
+                }
+
+            }
+        }
 
         stage('Run') {
             steps {
-                // Run the tests
+                
                 script {
                     bat 'dotnet run'
                 }
