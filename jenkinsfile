@@ -1,56 +1,56 @@
-pipeline
-{
+pipeline {
     agent any
-    enviroment
-    {
-        DOTNET_CLI_HOME="${env.WORKSPACE}/.dotnet"
+
+    environment {
+        DOTNET_CLI_HOME = "${env.WORKSPACE}/.dotnet"
     }
-    stages
-    {
-        stage('Checkout')
-        {
-            steps
-            {
+
+    stages {
+        stage('Checkout') {
+            steps {
+                // Checkout the code from the repository
                 git 'https://github.com/salman1256/appsecond.git'
-                echo 'Checkout completed'
-            }
-        }
-        stage('Restore')
-        {
-            steps
-            {
-                bat 'dotnet restore'
-                echo 'Restore all packages'
-            }
-        }
-        stage('Build')
-        {
-            steps
-            {
-                bat 'dotnet build'
-                echo 'Build Completed'
+                echo 'Checkout done' 
             }
         }
 
-        stage('Run')
-        {
-            steps
-            {
-                bat 'dotnet run'
-                echo 'Completed Run' 
-                
+        stage('Restore') {
+            steps {
+                // Restore the NuGet packages
+                script {
+                    bat 'dotnet restore'
+                    echo 'Restore Done'
+                }
             }
         }
+
+        stage('Build') {
+            steps {
+                // Build the application
+                script {
+                    bat 'dotnet build'
+                }
+            }
+        }
+
+        stage('Run') {
+            steps {
+                // Run the tests
+                script {
+                    bat 'dotnet run'
+                }
+            }
+        }
+
+        
     }
-}
-post
-{
-    success
-    {
-        echo 'Pipeline completed successfully'
-    }
-    failure
-    {
-        echo 'Pipeline Failed  again'
+
+    post {
+        success {
+            echo 'Pipeline completed successfully!'
+        }
+        failure {
+            echo 'Pipeline failed!'
+        }
     }
 }
