@@ -37,7 +37,8 @@ pipeline {
             steps{
                 script{
                     bat 'dotnet test --no-build --verbosity normal'
-                    
+                    echo 'Test Done'
+
                 }
 
             }
@@ -48,9 +49,21 @@ pipeline {
                 
                 script {
                     bat 'dotnet run'
+                    echo 'Run Completed'
                 }
             }
         }
+        stage ('Publish')
+        {
+            steps {
+                
+                script {
+                    bat 'dotnet publish --configuration Release --output ./publish'
+                    echo 'Published Done'
+                }
+            }
+        }
+
 
         
     }
