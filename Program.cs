@@ -11,7 +11,7 @@ foreach(var item in myStack)
 {
     System.Console.WriteLine(item);
 }
-Console.ReadKey();
+Console.Read();
 
 
 
